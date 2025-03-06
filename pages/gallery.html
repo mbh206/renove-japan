@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link >
+        <title>Renové Japan</title>
+    </head>
+    <body>
+        <header id="header">
+            <a href="../index.html"><img id="header-img" class="" src="../IMGs/RJ_Logo.png" alt="Renove Japan"></a>
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <nav class="nav">
+                <ul class="menu">
+                    <a href="../index.html"><li class="menu-item">Home</li></a>
+                    <a href="#"><li class="menu-item">Gallery</li></a>
+                    <a href="videos.html"><li class="menu-item">Videos</li></a>
+                    <a href="about.html"><li class="menu-item">About</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Portfolio Gallery Buttons -->
+            <div id="myBtnContainerWrapper">
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')">All</button>
+                    <button class="btn" onclick="filterSelection('before')">Before</button>
+                    <button class="btn" onclick="filterSelection('during')">During</button>
+                    <button class="btn" onclick="filterSelection('after')">After</button>
+                </div>
+            </div>
+              <!-- Portfolio Gallery -->
+            <div class="row">
+                <div class="column before">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-before_0022_Before-Front3.jpg" onclick="openModal();currentSlide(1)" alt="before" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column before">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-before_0000.jpg" onclick="openModal();currentSlide(2)" alt="before" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column before">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-before_0020_Before-Kitchen.jpg" onclick="openModal();currentSlide(3)" alt="before" style="width:100%">
+                        
+                    </div>
+                </div>
+                
+                <div class="column before">
+                    <div class="content">
+                            <img src="../IMGs/rj-horiz-before_0019_Before-Living.jpg" onclick="openModal();currentSlide(4)" alt="before" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column before">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-before_0007_P_20170709_132927.jpg" onclick="openModal();currentSlide(5)" alt="before" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column before">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-before_0021_Before-GuestBed2.jpg" onclick="openModal();currentSlide(6)" alt="before" style="width:100%">
+                        
+                    </div>
+                </div>
+            
+                <div class="column during">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-during_0001_IMG_4604.jpg" onclick="openModal();currentSlide(7)" alt="during" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column during">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-during_0002_IMG_4603.jpg" onclick="openModal();currentSlide(8)" alt="during" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column during">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-during_0000_IMG_4606.jpg" onclick="openModal();currentSlide(9)" alt="during" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column during">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-during_0012_IMG_4584.jpg" onclick="openModal();currentSlide(10)" alt="during" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column during">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-during_0026_IMG_4548.jpg" onclick="openModal();currentSlide(11)" alt="during" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column during">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-during_0031_IMG_4536.jpg" onclick="openModal();currentSlide(12)" alt="during" style="width:100%">
+                    
+                    </div>
+                </div>
+                
+                <div class="column after">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-after-002.jpg" onclick="openModal();currentSlide(13)" alt="after" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column after">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-after-001.jpg" onclick="openModal();currentSlide(14)" alt="after" style="width:100%">
+                        
+                    </div>
+                </div>
+                <div class="column after">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-after-003.jpg" onclick="openModal();currentSlide(15)" alt="after" style="width:100%">
+                        
+                    </div>
+                </div>
+            
+                <div class="column after">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-after-005.jpg" onclick="openModal();currentSlide(16)" alt="after" style="width:100%">
+                    
+                    </div>
+                </div>
+                <div class="column after">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-after-004.jpg" onclick="openModal();currentSlide(17)" alt="after" style="width:100%">
+                    
+                    </div>
+                </div>
+                <div class="column after">
+                    <div class="content">
+                        <img src="../IMGs/rj-horiz-after-010.jpg" onclick="openModal();currentSlide(18)" alt="after" style="width:100%">
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- END GRID -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-before_0022_Before-Front3.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-before_0000.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-before_0020_Before-Kitchen.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-before_0019_Before-Living.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-before_0007_P_20170709_132927.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-before_0021_Before-GuestBed2.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-during_0001_IMG_4604.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-during_0002_IMG_4603.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-during_0000_IMG_4606.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-during_0012_IMG_4584.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-during_0026_IMG_4548.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-during_0031_IMG_4536.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-after-002.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-after-001.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-after-003.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-after-005.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-after-004.jpg">
+                    </div>
+                    <div class="mySlides">
+                        <img src="../IMGs/rj-horiz-after-010.jpg">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </main>
+            <footer>
+                <div id="footer">
+                    <p>@ Copyright 2022, Renové Japan | 
+                        <span><a href="./privacy-policy-and-terms.html">Privacy Policy | Terms & Conditions</a></span></p> 
+                    </div>
+                </footer>
+        <script src="../JS/script.js"></script>
+    </body>
+</html>

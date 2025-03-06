@@ -1,0 +1,212 @@
+$primary_1: #445669;
+$primary_2: #6f8ba9;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    margin:0;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html, main, section {
+    height: 100%;
+}
+
+main {
+    margin-top:90px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+/* Header Layout */
+#header {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $primary_1;
+    color: #FFF;
+    transition: 0.2s;
+}
+
+#header-img {
+    width: 110px;
+    height: 75px;
+    margin: 10px 0;
+}
+
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: $primary_1;
+    overflow: hidden;
+    margin-top: 4em;
+    margin-bottom: 0;
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.menu a{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:active,
+.menu a:focus {
+    background-color: $primary_2;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0 1em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: block;
+    padding: 0;
+}
+
+.hamb{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px 20px;
+}
+
+.hamb-line {
+    background:white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} 
+
+.hamb-line::before,
+.hamb-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
+    position: relative;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 10px;
+}
+.hamb-line::after{
+    top: -10px;
+}
+
+.side-menu {
+    display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+    margin-top: 4em;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + main {
+    padding-top: 100px;
+}
+/* Parallax Section */
+
+.parallax1 {
+    background: linear-gradient( top $primary_2 50%, $primary_1 50%) ), url('../IMGs/rj-after-living.jpeg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url('../IMGs/rj-after-kitchen.jpeg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url('../IMGs/rj-after-bedroom.jpeg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-content {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .nav{
+        display: flex;
+        justify-content: space-evenly;
+        max-height: none;
+        position: relative;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        text-transform: uppercase;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: gray;
+
+    }
+
+    .hamb{
+        display: none;
+    }
+}
+
